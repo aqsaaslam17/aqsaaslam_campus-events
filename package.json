@@ -1,0 +1,22 @@
+{
+  "name": "aqsaaslam_campus-events",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aqsaaslam17/aqsaaslam_campus-events.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aqsaaslam17/aqsaaslam_campus-events/issues"
+  },
+  "homepage": "https://github.com/aqsaaslam17/aqsaaslam_campus-events#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
