@@ -1,4 +1,4 @@
-FROM node:alpine S build-image
+FROM node:alpine AS build-image
 
 WORKDIR /app
 
@@ -8,7 +8,8 @@ RUN npm install
 
 COPY . .
 
-RUN npx parcel build "src/index.html" --dist-dir "dist" --public-url "/"
+RUN npx parcel build src/index.html --dist-dir dist --public-url "/"
 
-FROM ngnix:alpine
-COPY --from-build-image /app/dist /usr/share/ngnix/html
+FROM nginx:alpine
+
+COPY --from=build-image /app/dist /usr/share/nginx/html
