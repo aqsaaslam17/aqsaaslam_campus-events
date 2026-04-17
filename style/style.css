@@ -44,6 +44,11 @@ nav a:hover {
     background-color: #90e0ef;
     padding: 40px;
     text-align: center;
+    transition: background-color 0.3s ease; /* ✅ Added hover effect */
+}
+
+.hero:hover {
+    background-color: #48cae4; /* ✅ New hover effect */
 }
 
 /* Content Sections */
